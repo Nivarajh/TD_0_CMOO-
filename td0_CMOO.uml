@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:LoggerStyle="http:///schemas/LoggerStyle/NS/0" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/LoggerStyle/NS/0 ../Logger/uml/Logger.profile.uml#_0rxk54YmEea_7ZkrvyDjxA http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_C2p3kIYZEea_7ZkrvyDjxA" name="td0_CMOO">
+    <eAnnotations xmi:id="_DJIusIYZEea_7ZkrvyDjxA" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_DJIusYYZEea_7ZkrvyDjxA" source="codegen">
+        <details xmi:id="_DJIusoYZEea_7ZkrvyDjxA" key="codegenDirectory" value="/td0_CMOO/src"/>
+        <details xmi:id="_DJR4ooYZEea_7ZkrvyDjxA" key="observedFolders" value="/td0_CMOO/src"/>
+        <details xmi:id="_6Tbx8IYbEea_7ZkrvyDjxA" key="AssociatedSourceCode" value="/td0_CMOO/src/Compte.java;2303526001/1;/td0_CMOO/src/CompteEpargne.java;1474690226/1;/td0_CMOO/src/Client.java;3994661788/1;/td0_CMOO/src/CompteCourant.java;547835482/1;/td0_CMOO/src/Virement.java;2488916810/1;/td0_CMOO/src/CompteAssuranceVie.java;1234273866/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_cMFOwIYZEea_7ZkrvyDjxA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_cMFOwYYZEea_7ZkrvyDjxA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_cMFOwoYZEea_7ZkrvyDjxA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_cMFOw4YZEea_7ZkrvyDjxA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_cMFOxIYZEea_7ZkrvyDjxA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_cMFOxYYZEea_7ZkrvyDjxA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_cMFOxoYZEea_7ZkrvyDjxA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_cMFOx4YZEea_7ZkrvyDjxA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_cOd0YIYZEea_7ZkrvyDjxA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_-Qet8IYpEea_7ZkrvyDjxA" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_-Qet8YYpEea_7ZkrvyDjxA" name="util">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_-Qet8oYpEea_7ZkrvyDjxA" name="Date"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NElEIIYZEea_7ZkrvyDjxA" name="Compte" isAbstract="true">
+      <ownedAttribute xmi:id="_a_Vu0IYZEea_7ZkrvyDjxA" name="numero" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ebu9MIYZEea_7ZkrvyDjxA" name="solde" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_kM2AMIYZEea_7ZkrvyDjxA" name="dateOuverture" visibility="private" type="_-Qet8oYpEea_7ZkrvyDjxA" association="_-Qoe8IYpEea_7ZkrvyDjxA"/>
+      <ownedAttribute xmi:id="_8MJR8YYZEea_7ZkrvyDjxA" name="client" type="_TyV8oIYZEea_7ZkrvyDjxA" association="_8MJR8IYZEea_7ZkrvyDjxA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8MJR8oYZEea_7ZkrvyDjxA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8MJR84YZEea_7ZkrvyDjxA" value="1"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_vUoM8IYZEea_7ZkrvyDjxA" name="crediter" visibility="public">
+        <ownedParameter xmi:id="_vUoM8YYZEea_7ZkrvyDjxA" name="" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_IOJHYIYeEea_7ZkrvyDjxA" name="somme">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_3IkqYIYZEea_7ZkrvyDjxA" name="debiter" visibility="public">
+        <ownedParameter xmi:id="_3IkqYYYZEea_7ZkrvyDjxA" name="" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_Og10gIYeEea_7ZkrvyDjxA" name="somme">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_OaJI4IYZEea_7ZkrvyDjxA" name="CompteEpargne">
+      <generalization xmi:id="_euyxMIYbEea_7ZkrvyDjxA" general="_NElEIIYZEea_7ZkrvyDjxA"/>
+      <ownedAttribute xmi:id="_Ecia0IYaEea_7ZkrvyDjxA" name="tauxInteret" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_QHatkIYaEea_7ZkrvyDjxA" name="plancher" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_X9c1sIYaEea_7ZkrvyDjxA" name="verserInterets" visibility="public">
+        <ownedParameter xmi:id="_X9c1sYYaEea_7ZkrvyDjxA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bbJroIYaEea_7ZkrvyDjxA" name="calculerInterests" visibility="private">
+        <ownedParameter xmi:id="_bbJroYYaEea_7ZkrvyDjxA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_k8s6YIYaEea_7ZkrvyDjxA" name="debiter" visibility="public">
+        <ownedParameter xmi:id="_k8s6YYYaEea_7ZkrvyDjxA" name="" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_TyV8oIYZEea_7ZkrvyDjxA" name="Client">
+      <ownedAttribute xmi:id="_8MJR9IYZEea_7ZkrvyDjxA" name="compte" type="_NElEIIYZEea_7ZkrvyDjxA" association="_8MJR8IYZEea_7ZkrvyDjxA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8MJR9YYZEea_7ZkrvyDjxA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8MJR9oYZEea_7ZkrvyDjxA" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_f4vtwIYZEea_7ZkrvyDjxA" name="Solde"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_iIMA0IYZEea_7ZkrvyDjxA" name="solde"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_mTe8kIYZEea_7ZkrvyDjxA" name="date"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_mzG30IYZEea_7ZkrvyDjxA" name="Date"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_8MJR8IYZEea_7ZkrvyDjxA" name="" memberEnd="_8MJR8YYZEea_7ZkrvyDjxA _8MJR9IYZEea_7ZkrvyDjxA"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_HeAAsIYaEea_7ZkrvyDjxA" name="Double"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_pktnUIYaEea_7ZkrvyDjxA" name="CompteCourant">
+      <generalization xmi:id="_fj1i0IYbEea_7ZkrvyDjxA" general="_NElEIIYZEea_7ZkrvyDjxA"/>
+      <ownedAttribute xmi:id="_sooEQIYaEea_7ZkrvyDjxA" name="plafondDeDecouvert" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_9T2EYIYaEea_7ZkrvyDjxA" name="tauxAgios" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_4BgypIYbEea_7ZkrvyDjxA" name="virement" type="_GfeGcIYbEea_7ZkrvyDjxA" association="_4BgyoIYbEea_7ZkrvyDjxA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4BgypYYbEea_7ZkrvyDjxA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4BgypoYbEea_7ZkrvyDjxA" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_GfeGcIYbEea_7ZkrvyDjxA" name="Virement">
+      <ownedAttribute xmi:id="_KqQE0IYbEea_7ZkrvyDjxA" name="somme" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_4BgyoYYbEea_7ZkrvyDjxA" name="compteCourant" type="_pktnUIYaEea_7ZkrvyDjxA" association="_4BgyoIYbEea_7ZkrvyDjxA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4BgyooYbEea_7ZkrvyDjxA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4Bgyo4YbEea_7ZkrvyDjxA" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_411ylIYbEea_7ZkrvyDjxA" name="compteAssuranceVie" type="_G5ZpYIYbEea_7ZkrvyDjxA" association="_411ykIYbEea_7ZkrvyDjxA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_411ylYYbEea_7ZkrvyDjxA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_411yloYbEea_7ZkrvyDjxA" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_G5ZpYIYbEea_7ZkrvyDjxA" name="CompteAssuranceVie">
+      <generalization xmi:id="_74DfAIYeEea_7ZkrvyDjxA" general="_OaJI4IYZEea_7ZkrvyDjxA"/>
+      <ownedAttribute xmi:id="_411ykYYbEea_7ZkrvyDjxA" name="virement" type="_GfeGcIYbEea_7ZkrvyDjxA" association="_411ykIYbEea_7ZkrvyDjxA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_411ykoYbEea_7ZkrvyDjxA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_411yk4YbEea_7ZkrvyDjxA" value="*"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_TvGJcIYbEea_7ZkrvyDjxA" name="solder" visibility="public">
+        <ownedParameter xmi:id="_TvGJcYYbEea_7ZkrvyDjxA" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_4BgyoIYbEea_7ZkrvyDjxA" name="" memberEnd="_4BgyoYYbEea_7ZkrvyDjxA _4BgypIYbEea_7ZkrvyDjxA"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_411ykIYbEea_7ZkrvyDjxA" name="" memberEnd="_411ykYYbEea_7ZkrvyDjxA _411ylIYbEea_7ZkrvyDjxA"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-Qoe8IYpEea_7ZkrvyDjxA" name="" memberEnd="_kM2AMIYZEea_7ZkrvyDjxA _-Qoe8YYpEea_7ZkrvyDjxA">
+      <ownedEnd xmi:id="_-Qoe8YYpEea_7ZkrvyDjxA" name="" type="_NElEIIYZEea_7ZkrvyDjxA" association="_-Qoe8IYpEea_7ZkrvyDjxA"/>
+    </packagedElement>
+    <profileApplication xmi:id="_DJIus4YZEea_7ZkrvyDjxA">
+      <eAnnotations xmi:id="_DJR4oIYZEea_7ZkrvyDjxA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+    <profileApplication xmi:id="_Mlk8gIYwEea_7ZkrvyDjxA">
+      <eAnnotations xmi:id="_Mlk8gYYwEea_7ZkrvyDjxA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="../Logger/uml/Logger.profile.uml#_0rxk54YmEea_7ZkrvyDjxA"/>
+      </eAnnotations>
+      <appliedProfile href="../Logger/uml/Logger.profile.uml#_0rxk4IYmEea_7ZkrvyDjxA"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_DJR4oYYZEea_7ZkrvyDjxA" base_Package="_C2p3kIYZEea_7ZkrvyDjxA">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:UnresolvedElement xmi:id="_f4vtwYYZEea_7ZkrvyDjxA" base_Element="_f4vtwIYZEea_7ZkrvyDjxA"/>
+  <UMLLabProfile:UnresolvedElement xmi:id="_iIMA0YYZEea_7ZkrvyDjxA" base_Element="_iIMA0IYZEea_7ZkrvyDjxA"/>
+  <UMLLabProfile:UnresolvedElement xmi:id="_mTe8kYYZEea_7ZkrvyDjxA" base_Element="_mTe8kIYZEea_7ZkrvyDjxA"/>
+  <UMLLabProfile:UnresolvedElement xmi:id="_mzG30YYZEea_7ZkrvyDjxA" base_Element="_mzG30IYZEea_7ZkrvyDjxA"/>
+  <UMLLabProfile:UnresolvedElement xmi:id="_HeAAsYYaEea_7ZkrvyDjxA" base_Element="_HeAAsIYaEea_7ZkrvyDjxA"/>
+  <UMLLabProfile:Reference xmi:id="_-Qet84YpEea_7ZkrvyDjxA" base_Element="_-Qet8oYpEea_7ZkrvyDjxA"/>
+  <LoggerStyle:LoggerStyledElement xmi:id="_Mlk8goYwEea_7ZkrvyDjxA" base_Element="_NElEIIYZEea_7ZkrvyDjxA"/>
+  <LoggerStyle:LoggerStyledElement xmi:id="_O0sfcIYwEea_7ZkrvyDjxA" base_Element="_OaJI4IYZEea_7ZkrvyDjxA"/>
+  <LoggerStyle:LoggerStyledElement xmi:id="_PjZYgIYwEea_7ZkrvyDjxA" base_Element="_pktnUIYaEea_7ZkrvyDjxA"/>
+  <LoggerStyle:LoggerStyledElement xmi:id="_P6884IYwEea_7ZkrvyDjxA" base_Element="_TyV8oIYZEea_7ZkrvyDjxA"/>
+  <LoggerStyle:LoggerStyledElement xmi:id="_QdFZkIYwEea_7ZkrvyDjxA" base_Element="_GfeGcIYbEea_7ZkrvyDjxA"/>
+  <LoggerStyle:LoggerStyledElement xmi:id="_Q2KA4IYwEea_7ZkrvyDjxA" base_Element="_G5ZpYIYbEea_7ZkrvyDjxA"/>
+</xmi:XMI>
